@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 17310945}
-  - component: {fileID: 17310946}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -155,19 +154,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &17310946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 17310944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ab9119263f9c624484bb3f953665243, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 3.5
 --- !u!1 &171792136
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,8 +166,9 @@ GameObject:
   - component: {fileID: 171792140}
   - component: {fileID: 171792139}
   - component: {fileID: 171792138}
+  - component: {fileID: 171792141}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: MoonSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -263,6 +250,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171792136}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &171792141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171792136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72ef593839077340a8dbbd96aec86d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0
 --- !u!1 &477567942
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,8 +365,9 @@ GameObject:
   - component: {fileID: 890484211}
   - component: {fileID: 890484210}
   - component: {fileID: 890484209}
+  - component: {fileID: 890484212}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: ShipCapsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -449,6 +450,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 890484207}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &890484212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890484207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72ef593839077340a8dbbd96aec86d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0
 --- !u!1 &896152024
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,8 +651,9 @@ GameObject:
   - component: {fileID: 1298434274}
   - component: {fileID: 1298434273}
   - component: {fileID: 1298434272}
+  - component: {fileID: 1298434275}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: PlanetSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -720,3 +735,16 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1298434270}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1298434275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298434270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72ef593839077340a8dbbd96aec86d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0

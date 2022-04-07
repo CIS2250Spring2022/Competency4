@@ -15,7 +15,7 @@ public class RespondToClick : MonoBehaviour
             {  
                 Debug.Log("Hit detected");
                 //Select stage    
-                if (hit.transform.name == this.transform.name) 
+                if (hit.transform.gameObject.name == this.transform.name) 
                 {  
                 //SceneManager.LoadScene("SceneTwo");  
                 Debug.Log("Clicked!");

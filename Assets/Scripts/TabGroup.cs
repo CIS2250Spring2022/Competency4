@@ -6,32 +6,32 @@ using UnityEngine.EventSystems;
 
 public class TabGroup : MonoBehaviour
 {
-    public List<TabButton> tabButtons;
-    public TabButton selectedTab;
+    public List<GUITabButton> tabButtons;
+    public GUITabButton selectedTab;
 
     public List<GameObject> allTabPanels;
 
-    public void Subscribe(TabButton button)
+    public void Subscribe(GUITabButton button)
     {
         if (tabButtons == null)
         {
-            tabButtons = new List<TabButton>();
+            tabButtons = new List<GUITabButton>();
         }
 
         tabButtons.Add(button);
     }
 
-    public void OnTabEnter(TabButton buton)
+    public void OnTabEnter(GUITabButton buton)
     {
         ResetTabs();
     }
 
-    public void OnTabExit(TabButton button)
+    public void OnTabExit(GUITabButton button)
     {
         ResetTabs();
     }
 
-    public void OnTabSelected(TabButton button)
+    public void OnTabSelected(GUITabButton button)
     {
         selectedTab = button;
         ResetTabs();
@@ -40,7 +40,7 @@ public class TabGroup : MonoBehaviour
     public void ResetTabs()
     {
         int index = selectedTab.transform.GetSiblingIndex();
-        foreach (TabButton button in tabButtons)
+        foreach (GUITabButton button in tabButtons)
         {
             //TODO check if we want Sprite backgrounds in the buttons or not.
             if (selectedTab == null)

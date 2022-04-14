@@ -10,11 +10,13 @@ public class GUITabButton : MonoBehaviour, IPointerEnterHandler, IPointerClickHa
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        FindObjectOfType<AudioManager>().Play("Button Click");
         tabGroup.OnTabSelected(this);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        FindObjectOfType<AudioManager>().Play("Button Enter");
         tabGroup.OnTabEnter(this);
     }
 

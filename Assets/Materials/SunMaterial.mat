@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SunMaterial
+  m_Shader: {fileID: -6465566751694194690, guid: 9c2c7d528190888408d148e9fe8331b6, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_9d4ce7f1808c4949a0e4b3f816eee544: 2
+    - Vector1_bd5a7b01283c4f959634c41fd640d558: 1
+    - Vector1_f16c9bcf9f45403da8ca1749e8737795: 2
+    m_Colors:
+    - Color_4600610b0b9c46338f7d1fa90135945a: {r: 1.47451, g: 0.282353, b: 0, a: 0}
+    - Color_847e7123cefd45549642760ac54ea6a2: {r: 0.7924528, g: 0.6662436, b: 0.1607334, a: 0}
+  m_BuildTextureStacks: []

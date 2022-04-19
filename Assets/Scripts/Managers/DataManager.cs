@@ -5,8 +5,8 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
 public class DataManager : MonoBehaviour, IGameManager {
-	public ManagerStatus status {get; private set;}
-	
+	public ManagerStatus status { get; private set; }
+
 	private string _filename;
 	
 	private NetworkService _network;

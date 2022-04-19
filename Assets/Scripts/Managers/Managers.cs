@@ -14,11 +14,9 @@ public class Managers : MonoBehaviour {
 	// public static PlayerManager Player {get; private set;}
 	// public static InventoryManager Inventory {get; private set;}
 	public static MissionManager Mission {get; private set;}
-<<<<<<< Updated upstream
+
 	public static AudioManager Audio { get; set; }
-=======
-	public static AudioManager Audio { get; private set; }
->>>>>>> Stashed changes
+
 
 	private List<IGameManager> _startSequence;
 	
@@ -35,10 +33,7 @@ public class Managers : MonoBehaviour {
 		// _startSequence.Add(Player);
 		// _startSequence.Add(Inventory);
 		//_startSequence.Add(Data);
-<<<<<<< Updated upstream
 		_startSequence.Add(Mission);
-=======
->>>>>>> Stashed changes
 		_startSequence.Add(Audio);
 
 		StartCoroutine(StartupManagers());

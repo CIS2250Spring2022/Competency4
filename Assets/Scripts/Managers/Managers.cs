@@ -8,12 +8,16 @@ using System.Collections.Generic;
 [RequireComponent(typeof(AudioManager))]
 [RequireComponent(typeof(MissionManager))]
 [RequireComponent(typeof(AudioManager))]
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 public class Managers : MonoBehaviour {
 	// public static DataManager Data {get; private set;}
 	// public static PlayerManager Player {get; private set;}
 	// public static InventoryManager Inventory {get; private set;}
 	public static MissionManager Mission {get; private set;}
+	public static AudioManager Audio { get; private set; }
 
 	public static AudioManager Audio { get; set; }
 
@@ -28,10 +32,18 @@ public class Managers : MonoBehaviour {
 		// Inventory = GetComponent<InventoryManager>();
 		Mission = GetComponent<MissionManager>();
 		Audio = GetComponent<AudioManager>();
+<<<<<<< Updated upstream
 
 		_startSequence = new List<IGameManager>();
 		// _startSequence.Add(Player);
 		// _startSequence.Add(Inventory);
+=======
+		_startSequence = new List<IGameManager>();
+		// _startSequence.Add(Player);
+		// _startSequence.Add(Inventory);
+		 _startSequence.Add(Mission);
+		_startSequence.Add(Audio);
+>>>>>>> Stashed changes
 		//_startSequence.Add(Data);
 		_startSequence.Add(Mission);
 		_startSequence.Add(Audio);

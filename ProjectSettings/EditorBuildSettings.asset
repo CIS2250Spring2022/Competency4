@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 4215e67554f0b144e8d50bfcc0a27a73
+  - enabled: 1
+    path: Assets/Scenes/Albuquerque.unity
+    guid: b70a432acc7480142b2da6340797b4da
   m_configObjects: {}
